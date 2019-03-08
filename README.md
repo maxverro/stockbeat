@@ -1,6 +1,6 @@
 # Stockbeat
 [![Build Status](https://travis-ci.org/maxverro/stockbeat.svg?branch=master)](https://travis-ci.org/maxverro/stockbeat)
-[![Coverage Status](https://coveralls.io/repos/github/maxverro/stockbeat/badge.svg?branch=master)](https://coveralls.io/github/maxverro/stockbeat?branch=master)
+[![codecov](https://codecov.io/gh/maxverro/stockbeat/branch/master/graph/badge.svg)](https://codecov.io/gh/maxverro/stockbeat)
 
 Welcome to Stockbeat.
 
