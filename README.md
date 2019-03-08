@@ -1,4 +1,5 @@
 # Stockbeat
+[![Build Status](https://travis-ci.org/maxverro/stockbeat.svg?branch=master)](https://travis-ci.org/maxverro/stockbeat)
 
 Welcome to Stockbeat.
 
