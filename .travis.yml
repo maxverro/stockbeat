@@ -55,3 +55,4 @@ script:
 
 after_success:
   # Copy full.cov to coverage.txt because codecov.io requires this file
+  - bash < (curl -s https://codecov.io/bash)
