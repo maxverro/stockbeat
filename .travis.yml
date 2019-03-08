@@ -41,6 +41,7 @@ before_install:
   - export TRAVIS_BUILD_DIR=$HOME/gopath/src/github.com/maxverro/stockbeat/
   - cd $HOME/gopath/src/github.com/maxverro/stockbeat/
   - if [ $TRAVIS_OS_NAME = osx ]; then pip install virtualenv; fi
+  - go get -t -v ./...
 
 # Skips installations step
 install: 
@@ -49,8 +50,7 @@ install:
 
 script:
   - make $TARGETS
-  - go test -v -covermode=count -coverprofile=coverage.out
-  - $HOME/gopath/bin/goveralls -coverprofile=coverage.out -service=travis-ci
+  - go test -race -coverprofile=coverage.txt -covermode=atomic
 
 
 after_success:
