@@ -1,5 +1,6 @@
 # Stockbeat
 [![Build Status](https://travis-ci.org/MaxVerro/stockbeat.svg?branch=master)](https://travis-ci.org/MaxVerro/stockbeat)
+
 Welcome to Stockbeat.
 
 Ensure that this folder is at the following location:
