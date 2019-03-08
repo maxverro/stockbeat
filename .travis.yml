@@ -43,10 +43,13 @@ before_install:
   - if [ $TRAVIS_OS_NAME = osx ]; then pip install virtualenv; fi
 
 # Skips installations step
-install: true
+install: 
+  - go get golang.org/x/tools/cmd/cover
+  - go get github.com/mattn/goveralls
 
 script:
   - make $TARGETS
+  - go test -v -covermode=count -coverprofile=coverage.out
 
 after_success:
   # Copy full.cov to coverage.txt because codecov.io requires this file
