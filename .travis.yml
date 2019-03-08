@@ -50,7 +50,7 @@ install:
 script:
   - make $TARGETS
   - go test -v -covermode=count -coverprofile=coverage.out
-  - $HOME/gopath/bin/goveralls -coverprofile=coverage.out -service=travis-ci -
+  - $HOME/gopath/bin/goveralls -coverprofile=coverage.out -service=travis-ci
 
 
 after_success:
